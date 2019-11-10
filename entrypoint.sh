@@ -16,7 +16,7 @@ npm install
 
 # generate&publish
 hexo g
-cp source/*.copy_html public/
+for f in source/*.copy_html; do cp "$f" "$(echo "$f" | sed 's/source\//public\//' | sed 's/.copy_html/.html/')"; done
 hexo d
 
 # update files
