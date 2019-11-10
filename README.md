@@ -10,7 +10,7 @@ The GitHub Actions for automatic generate and deploy hexo-based blog.
 
 ## Usage
 
-Before using this action, please config hexo env locally.
+Before using this action, please config hexo env locally and install `hexo-deployer-git` plugin.
 
 e.g.
 

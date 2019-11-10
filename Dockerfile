@@ -17,11 +17,10 @@ RUN apk add --no-cache \
     curl \    
     autoconf \
     automake \
-    bash \
+    gcc \
     g++ \
-    libc6-compat \
-    libjpeg-turbo-dev \
-    libpng-dev \
+    zlib-dev \
+    libtool \
     make \
     nasm
 
