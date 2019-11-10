@@ -16,6 +16,7 @@ npm install
 
 # generate&publish
 hexo g
+cp source/*.copy_html public/
 hexo d
 
 # update files
