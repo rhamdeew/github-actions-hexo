@@ -11,9 +11,19 @@ LABEL "com.github.actions.color"="green"
 
 COPY README.md LICENSE entrypoint.sh /
 
-RUN apk add --no-cache git
-RUN apk add --no-cache openssh
-RUN apk add --no-cache curl
+RUN apk add --no-cache \
+    git \
+    openssh \
+    curl \    
+    autoconf \
+    automake \
+    bash \
+    g++ \
+    libc6-compat \
+    libjpeg-turbo-dev \
+    libpng-dev \
+    make \
+    nasm
 
 RUN chmod +x /entrypoint.sh
 
