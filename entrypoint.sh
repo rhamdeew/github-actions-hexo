@@ -11,8 +11,8 @@ git config --global user.name "${INPUT_USERNAME}"
 git config --global user.email "${INPUT_EMAIL}"
 
 # setup hexo env
-npm install -g hexo-cli
-npm install
+yarn global add hexo-cli
+yarn install
 
 # generate&publish
 hexo g
